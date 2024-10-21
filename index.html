@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IngeMovil.org</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <style>
+          .navbar-brand img {
+              height: 40px;
+              width: 40px;
+              border-radius: 50%;
+              object-fit: cover;
+          }
+      </style>
+
+</head>
+<header>
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/ingemovil.jpg" alt="Logo" style="height: 40px; width: 60px;" onclick="cargarHome();">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#" onclick="cargarHome();">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="cargarIngemovil();">¿Que es un Ingemovil?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="cargarVenta();">Venta de autos</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+          <button class="btn" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+          <button class="btn" type="submit" onclick="cargarLogin();"><i class="bi bi-person-circle"></i></button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<main id="panelPrincipal">
+
+
+
+</main>
+
+
+
+
+
+
+<footer>
+    <div class="footerContainer">
+        <div class="social-icons">
+            <a href="#"><img src="assets/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="assets/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="assets/facebook.png" alt="Facebook"></a>
+        </div>
+        <p>©Copyright IngeMovil.ORG</p>
+        <ul style="text-decoration: none !important;">
+            <li><a href="#" onclick="cargarPoliticas();">Políticas</a></li>
+            <li><a href="#" onclick="cargarQuienesSomos();">Sobre nosotros</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="js/index.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</html>
