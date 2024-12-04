@@ -91,3 +91,63 @@ function cargarVenta() {
         }
     )
 }
+
+function cargarIngetroca() {
+    let contenedorPrincipal = document.getElementById("panelPrincipal");
+
+    fetch("html/ingetroca.html").then(
+        function (contenido_html) {
+            return contenido_html.text();
+        }
+    ).then(
+        function (html) {
+            console.log(html);
+            contenedorPrincipal.innerHTML = html;
+        }
+    )
+}
+
+function cargarIngechevy() {
+    let contenedorPrincipal = document.getElementById("panelPrincipal");
+
+    fetch("html/ingechevy.html").then(
+        function (contenido_html) {
+            return contenido_html.text();
+        }
+    ).then(
+        function (html) {
+            console.log(html);
+            contenedorPrincipal.innerHTML = html;
+        }
+    )
+}
+
+function cargarIngeitalia() {
+    let contenedorPrincipal = document.getElementById("panelPrincipal");
+
+    fetch("html/ingeitalia.html").then(
+        function (contenido_html) {
+            return contenido_html.text();
+        }
+    ).then(
+        function (html) {
+            console.log(html);
+            contenedorPrincipal.innerHTML = html;
+        }
+    )
+}
+
+function cargarIngebus() {
+    let contenedorPrincipal = document.getElementById("panelPrincipal");
+
+    fetch("html/ingebus.html").then(
+        function (contenido_html) {
+            return contenido_html.text();
+        }
+    ).then(
+        function (html) {
+            console.log(html);
+            contenedorPrincipal.innerHTML = html;
+        }
+    )
+}
