@@ -5,7 +5,8 @@
     "express": "^4.21.1",
     "mongodb": "^6.11.0",
     "mongoose": "^8.8.3",
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.7",
+    "sweetalert2": "^11.6.13"
   },
   "name": "proyectov3",
   "version": "1.0.0",

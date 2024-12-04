@@ -7,22 +7,22 @@
   <title>IngeChevy</title>
   <style>
     .card {
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      width: 80%;
-      margin: 0 auto;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        width: 80%;
+        margin: 0 auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     .img-fluid {
-      width: 100%;
-      height: auto; 
-      object-fit: cover;
+        width: 100%;
+        height: auto; 
+        object-fit: cover;
     }
 
     .button {
         display: inline-block;
-        width: 48%;
+        width: 100%;
         padding: 10px;
         background-color: #C7B124;
         color: white;
@@ -41,11 +41,15 @@
     }
 
     .button-container {
-        display: flex;
-        justify-content: space-between;
         width: 80%; 
         margin: 0 auto; 
     }
+
+    .text-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
 
   </style>
 </head>
@@ -62,7 +66,7 @@
           </div>
           <div class="col-md-7">
             <div class="card-body limited-width-text">
-              <h5 class="card-title">Inge4x4</h5>
+              <h5 class="card-title">Ingechevy</h5>
               <p>Lorem ipsum dolor sit amet consectetur. 
                 Interdum feugiat in tincidunt 
                 porttitor nunc amet 
@@ -79,11 +83,51 @@
           </div>
         </div>
       </div>
-      <div class="button-container">
-        <button class="button">Comprar</button>
-        <button class="button">Agregar a favoritos</button>
+      <section class="text-container">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, voluptate? Libero magni voluptatibus
+          necessitatibus. Dolore quisquam, aliquid, quasi, similique voluptatem exercitationem atque error veniam
+          reiciendis consectetur soluta unde quibusdam. Vero.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, volupt
+            at
+            e? Libero magn
+            i voluptatibus necessitatibus. Dolore quisquam, aliquid, quasi, similique voluptatem exercitationem atque
+            error veniam reiciendis consectetur soluta unde quibusdam. Vero.</p>
+            </section>
+            <div class="button-container">
+              <button class="button" onclick="mostrarDetallesCompra('Ingetroca')">Comprar</button>
+          </div>
+    </div>
+
+    <div class="modal fade" id="purchaseModal" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="purchaseModalLabel">Detalles de la compra</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Precio:</strong> $<span id="purchasePrice"></span></p>
+            <p><strong>Lugar para recoger:</strong> <span id="pickupLocation"></span></p>
+            <p><strong>Cantidad disponible:</strong> <span id="productQuantity"></span></p>
+            <p><strong>Método de pago:</strong>
+              <select id="paymentMethodSelect">
+                <option value="PayPal">PayPal</option>
+                <option value="Tarjeta de débito">Tarjeta de débito</option>
+                <option value="Tarjeta de crédito">Tarjeta de crédito</option>
+                <option value="Efectivo">Efectivo</option>
+                <option value="Oxxo Pay">Oxxo Pay</option>
+              </select>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" onclick="apartarProducto('Ingechevy')">Apartar</button>
+          </div>
+        </div>
       </div>
     </div>
+
   </main>
 
 </body>
